@@ -1,0 +1,18 @@
+ Compare The Triplets problem is very simple and similar to comparing marks of three subject of two students in a way like if subject1, 
+ student1 got high marks than student2 than student1 got 1 point and the same repeat for subject2, and subject3 at the end print the both student points. 
+ Maximum points can a student earn is 3 or minimum can be 0 or there may be the equal point if in subject1 both students got the same point. 
+ Check the explanation section for better understanding.
+ 
+ Explanation:
+ -Let's take an example and compare with our logic, suppose two students are Bob and Alice and Bob got 56, 75, 26 marks and Alice got 84, 45, 26 Now Compare The Triplets
+
+Bob Marks===> 56, 75, 26
+Alice Marks==> 84, 45, 26
+
+Bob Marks         Alice Marks         Bob Point          Alice Point
+
+56              <              84                   0                         1
+75              >              45                   1                         0 
+26              =              26                   0                         0
+
+So we can see that Bob and Alice got 1, 1 point in tale That is an answer print on the screen.
