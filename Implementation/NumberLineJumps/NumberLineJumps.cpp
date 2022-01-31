@@ -1,29 +1,41 @@
-#include <iostream>
-#include <cstdio>
-#include <vector>
-#include <algorithm>
+#include <map>
+#include <set>
+#include <list>
 #include <cmath>
+#include <ctime>
+#include <deque>
+#include <queue>
+#include <stack>
+#include <string>
+#include <bitset>
+#include <cstdio>
+#include <limits>
+#include <vector>
+#include <climits>
+#include <cstring>
+#include <cstdlib>
+#include <fstream>
+#include <numeric>
+#include <sstream>
+#include <iostream>
+#include <algorithm>
+#include <unordered_map>
 using namespace std;
 
 int main()
 {
-    int s,t,a,b,n,m,d,ans1=0,ans2=0;
-    cin>>s>>t>>a>>b>>m>>n;
-    for(int i = 0; i<m;i++)
+    int x1, v1,x2,v2;
+    
+    cin>>x1>>v1>>x2>>v2;
+    
+    if((v1<= v2) ||  ((x2 - x1) % (v2-v1)))
     {
-            cin>>d;
-            d=a+d;
-            if(d>=s && d<=t)
-                ans1++;
+        puts("NO");
     }
-    for(int i = 0; i<n;i++)
+    else 
     {
-        cin>>d;
-        d=b+d;
-        if(d>=s  && d<=t)
-            ans2++;
-    }
-    cout<<ans1<<endl;
-    cout<<ans2<<endl;
-	return 0;
+        puts("YES");
+    } 
+    cout<<endl;
+    return 0;
 }
